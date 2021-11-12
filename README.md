@@ -1,5 +1,5 @@
 &nbsp;  
-# BRRRR_1
+# PUZZLe1
 
 ## Overview:
 A responsive front end website holding a puzzle which requires the user to match a given set of colours following a given pattern. 
