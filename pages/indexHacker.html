@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, user-scalable=no">
+        <!--The CSS-->
+        <link rel="stylesheet" href="../styles/styleHacker.css">
+        <!--FonT-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <audio src="../audio/start.mp3" id="start"></audio>
+        <audio src="../audio/click.mp3" id="click"></audio>
+        <audio src="../audio/endscr.mp3" id="endscr"></audio>     
+        <audio src="../audio/highscore.mp3" id="highs"></audio>  
+    </head>
+    <body>
+        <div id="homescreen">
+            <button id="EASY">EASY</button>
+            <br>
+            <button id="NORMAL">NORMAL</button>
+            <br>
+        </div>
+        
+        <div id="main">
+            <!--BUTTONS-->
+            <div id="buttons">
+                <button onclick="reset()">RESET</button>
+                <br>
+                <button onclick="location.href='../index.html'">MAIN MENU</button>
+                <br>
+                <button onclick="highscore()">LEADERBOARD</button>
+            </div>
+
+            <!--GRIDS-->
+            <div id="grid1">
+            </div>
+            <br>
+            <div id="container">
+                <div id="grid2">
+                </div>
+                <div id="innerbox"></div>
+            </div>
+        </div>
+
+        <!--END SCREEN-->
+        <div id="cover">
+            <div class="vibrato">HUH! YOU WON...</div>
+            <div id="result"></div>
+            <div>PATHETIC</div>
+            <button onclick="reset()">PLAY AGAIN</button>
+            <button onclick="location.href='../index.html'">MAIN MENU</button>
+            <button onclick="highscore()">LEADERBOARD</button>
+        </div>
+
+        <!--HIGH SCORE-->
+        <div id="highscore"+seed>
+            <div class="vibrato">HIGH SCOREEEE WOOOOOOOOOO</div>
+            <div id="resultH"></div>
+            <div>ENTER NAME:</div>
+            <input type="text" id="name">
+            <button onclick="submit()">SUBMIT</button>
+            <br>
+            <button onclick="reset()">PLAY AGAIN</button>
+            <button onclick="location.href='../index.html'">MAIN MENU</button>
+        </div>
+
+        <!--The leaderboard popup-->
+        <div id="scoreboard">
+            <div id="score">
+              <span id="close">&times;</span>
+              <p>LEADERBOARD</p>
+              <p id="text"></p>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/scriptHacker.js"></script>
+</html>
